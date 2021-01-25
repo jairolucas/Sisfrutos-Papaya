@@ -3,7 +3,12 @@ Nos últimos anos as abordagens baseadas em aprendizado de máquina, mais especi
 
 Como segunda contribuição usamos nosso conjunto de dados para treinar uma rede neural profunda para identificar e classificar doenças e outros defeitos em uma imagem de Papaya. Nossa rede alcançou uma acuracidade de xx.xx % , o que a torna apta a ser utilizada em sistemas reais mais complexos, como sistemas embarcados de controle de qualidade ou sistemas robóticos de colheita.
 
-## Pré-Requisitos
+### Pré-Requisitos
+*Ubuntu 18 Cuda 10.1 *Cudnn 8.0 -OpenCV 4.5
+
+results: ScaledYOLOv4
+
+More details in articles on medium:
 Ubuntu 18
 Cuda 10.1
 Cudnn 8.0
