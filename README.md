@@ -49,14 +49,14 @@ Como segunda contribuição usamos nosso conjunto de dados para treinar uma rede
 
 ## Treinar / Testar Rede
 - Hardware utilizado: Gpu Nvidia 1060 com 6gb de memória
-- Tempo Treinamento :  
-*Base 128
-*Base 1024: ~ 54 horas
-*Base completa: 
+- Tempo Treinamento:
+* Base 128
+* Base 1024: ~ 54 horas
+* Base completa: 
 - Para treinar: 
-* ./darknet detector train data/obj.data cfg/yolov4.cfg yolov4.conv.137 -map
+ ./darknet detector train data/obj.data cfg/yolov4.cfg yolov4.conv.137 -map
 - Para testar : 
-* ./darknet detector test data/obj.data cfg/yolov4.cfg yolov4.conv.137 
+ ./darknet detector test data/obj.data cfg/yolov4.cfg yolov4.conv.137 
 
 ## Resultados
 - [Gráfico mAP Base 128](results/chartb128.png)
