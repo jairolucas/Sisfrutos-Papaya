@@ -12,7 +12,7 @@ Como segunda contribuição usamos nosso conjunto de dados para treinar uma rede
 ## DataSet
 ### DataSet B128 
 - Localização : Pasta dados do projeto
-- Descrição   : Base para testes sanidade da rede. 128 imagens com a seguinte distribuições de classes
+- Descrição   : Base para testes de sanidade da rede. Composta por 128 imagens com a seguinte distribuições de classes:
   * FRUTO_SEM_DOENÇA 	  44
   * Antracnose		        12  
   * Phytoftora		        12	
@@ -24,23 +24,41 @@ Como segunda contribuição usamos nosso conjunto de dados para treinar uma rede
 
 ### DataSet B1024
 - Localização : Pasta dados do projeto
-- Descrição   : Base para testes sanidade da rede. 1024 imagens com a seguinte distribuições de classes
+- Descrição   : Base para testes de sanidade da rede. Composta por 1024 imagens com a seguinte distribuições de classes:
   * FRUTO_SEM_DOENÇA 	  324
   * Antracnose		        100
-  * Phytoftora		        100	
+  * Phytoftora		        100	 
   * Dano_Mecânico		     100
   * Mancha_Chocolate	   100	
   * Meleira			          100
   * Mancha_Fisiologica  100
   * Pinta_Preta		       100
+  
+  ### DataSet Bcompleta
+- Localização : [Base de dados Sisfrutos-Papaya](https://drive.google.com/drive/folders/10fuLRYK2NFqAo6TMYYjl8ulD7OdlVvZ5)
+- Descrição   : Base completa composta por 18750 imagens com a seguinte distribuições de classes:
+  * FRUTO_SEM_DOENÇA 	  
+  * Antracnose		        
+  * Phytoftora		        
+  * Dano_Mecânico		     
+  * Mancha_Chocolate	   
+  * Meleira			          
+  * Mancha_Fisiologica 
+  * Pinta_Preta		       
+
 
 ## Treinar / Testar Rede
 * Hardware utilizado: Gpu Nvidia 1060 com 6gb de memória
-* Tempo Treinamento : Base 1024 - ~ 54 horas
-                      Base 128  - 
+* Tempo Treinamento :  Base 128       - 
+                       Base 1024      - ~ 54 horas
+                       Base completa  - 
 * Para treinar: ./darknet detector train data/obj.data cfg/yolov4.cfg yolov4.conv.137 -map
 * Para testar : ./darknet detector test data/obj.data cfg/yolov4.cfg yolov4.conv.137 
 
 ## Resultados
-[mAP](results/chart.png)
+[Gráfico mAP Base 128](results/chartb128.png)
+[Gráfico mAP Base 1024](results/chart.png)
+[Gráfico mAP Base Completa](results/chartCompleta.png)
+
+
 
