@@ -34,7 +34,7 @@ Como segunda contribuição usamos nosso conjunto de dados para treinar uma rede
   * Mancha_Fisiologica  100
   * Pinta_Preta		       100
   
-  ### DataSet Bcompleta
+### DataSet Bcompleta
 - Localização : [Base de dados Sisfrutos-Papaya](https://drive.google.com/drive/folders/10fuLRYK2NFqAo6TMYYjl8ulD7OdlVvZ5)
 - Descrição   : Base completa composta por 18750 imagens com a seguinte distribuições de classes:
   * FRUTO_SEM_DOENÇA 	  
@@ -46,17 +46,16 @@ Como segunda contribuição usamos nosso conjunto de dados para treinar uma rede
   * Mancha_Fisiologica 
   * Pinta_Preta		       
 
-
 ## Treinar / Testar Rede
 - Hardware utilizado: Gpu Nvidia 1060 com 6gb de memória
-- Tempo Treinamento:
-* Base 128
-* Base 1024: ~ 54 horas
-* Base completa: 
+- Tempo de Treinamento: 
+  * DataSet B128
+  * DataSet B1024 : ~54 horas
+  * DataSet Bcompleta
 - Para treinar: 
- ./darknet detector train data/obj.data cfg/yolov4.cfg yolov4.conv.137 -map
+*./darknet detector train data/obj.data cfg/yolov4.cfg yolov4.conv.137 -map
 - Para testar : 
- ./darknet detector test data/obj.data cfg/yolov4.cfg yolov4.conv.137 
+*./darknet detector test data/obj.data cfg/yolov4.cfg yolov4.conv.137 
 
 ## Resultados
 - [Gráfico mAP Base 128](results/chartb128.png)
