@@ -10,30 +10,37 @@ Como segunda contribuição usamos nosso conjunto de dados para treinar uma rede
 - OpenCV 4.5
 
 ## DataSet
-#### DataSet B128 
+### DataSet B128 
 - Localização : Pasta dados do projeto
 - Descrição   : Base para testes sanidade da rede. 128 imagens com a seguinte distribuições de classes
   * FRUTO_SEM_DOENÇA 	  44
-  * Antracnose		      12  
-  * Phytoftora		      12	
-  * Dano_Mecânico		    12
-  * Mancha_Chocolate	  12	
-  * Meleira			        12
+  * Antracnose		        12  
+  * Phytoftora		        12	
+  * Dano_Mecânico		     12
+  * Mancha_Chocolate	   12	
+  * Meleira			          12
   * Mancha_Fisiologica  12
-  * Pinta_Preta		      12
+  * Pinta_Preta		       12
 
-#### DataSet B1024
+### DataSet B1024
 - Localização : Pasta dados do projeto
 - Descrição   : Base para testes sanidade da rede. 1024 imagens com a seguinte distribuições de classes
   * FRUTO_SEM_DOENÇA 	  324
-  * Antracnose		      100
-  * Phytoftora		      100	
-  * Dano_Mecânico		    100
-  * Mancha_Chocolate	  100	
-  * Meleira			        100
+  * Antracnose		        100
+  * Phytoftora		        100	
+  * Dano_Mecânico		     100
+  * Mancha_Chocolate	   100	
+  * Meleira			          100
   * Mancha_Fisiologica  100
-  * Pinta_Preta		      100
+  * Pinta_Preta		       100
 
-## Configuração Rede
+## Treinar / Testar Rede
+* Hardware utilizado: Gpu Nvidia 1060 com 6gb de memória
+* Tempo Treinamento : Base 1024 - ~ 54 horas
+                      Base 128  - 
+* Para treinar: ./darknet detector train data/obj.data cfg/yolov4.cfg yolov4.conv.137 -map
+* Para testar : ./darknet detector test data/obj.data cfg/yolov4.cfg yolov4.conv.137 
 
 ## Resultados
+[mAP](results/chart.png)
+
