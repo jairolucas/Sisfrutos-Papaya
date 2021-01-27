@@ -49,7 +49,7 @@ Como segunda contribuição usamos nosso conjunto de dados para treinar uma rede
 ## Treinar / Testar Rede
 - Hardware utilizado: Gpu Nvidia 1060 com 6gb de memória
 - Tempo de Treinamento: 
-  * DataSet B128  : xxx
+  * DataSet B128  : 1:40 horas
   * DataSet B1024 : ~59 horas
   * DataSet Bcompleta : xxx
 - Para treinar: ./darknet detector train data/obj.data cfg/yolov4.cfg yolov4.conv.137 -map
@@ -57,11 +57,25 @@ Como segunda contribuição usamos nosso conjunto de dados para treinar uma rede
 
 ## Resultados
 - [Gráfico mAP Dataset B128](results/chartb128.png)
+* precision = 1.0, 
+* Recall    = 1.0, 
+* F1-score  = 1.0
+* mean average precision (mAP) = 1.000, or 100.00 %
+#### Por classe:
+class_id = 0, name = FRUTO_SEM_DOENÇA, ap = 100.00%  (TP = 44, FP = 0) 
+class_id = 1, name = Antracnose,       ap = 100.00%  (TP = 12, FP = 0) 
+class_id = 2, name = Phytoftora,       ap = 100.00%  (TP = 12, FP = 0) 
+class_id = 3, name = Dano_Mecânico,    ap = 100.00%  (TP = 12, FP = 0) 
+class_id = 4, name = Mancha_Chocolate, ap = 100.00%  (TP = 12, FP = 0) 
+class_id = 5, name = Meleira,          ap = 100.00%  (TP = 12, FP = 0) 
+class_id = 6, name = Mancha_Fisiologica, ap = 100 %  (TP = 12, FP = 0) 
+class_id = 7, name = Pinta_Preta,      ap = 100.00%  (TP = 12, FP = 0)
+
 ### B1024
 - [Gráfico mAP DataSet B1024](results/chart.png)
 * precision = 0.83, 
-* Recall     = 0.91, 
-* F1-score = 0.87
+* Recall    = 0.91, 
+* F1-score  = 0.87
 * mean average precision (mAP) = 0.896401, or 89.64 %
 
 #### Por classe:
