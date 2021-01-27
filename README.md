@@ -62,14 +62,14 @@ Como segunda contribuição usamos nosso conjunto de dados para treinar uma rede
 * F1-score  = 1.0
 * mean average precision (mAP) = 1.000, or 100.00 %
 #### Por classe:
-class_id = 0, name = FRUTO_SEM_DOENÇA, ap = 100.00%  (TP = 44, FP = 0) 
-class_id = 1, name = Antracnose,       ap = 100.00%  (TP = 12, FP = 0) 
-class_id = 2, name = Phytoftora,       ap = 100.00%  (TP = 12, FP = 0) 
-class_id = 3, name = Dano_Mecânico,    ap = 100.00%  (TP = 12, FP = 0) 
-class_id = 4, name = Mancha_Chocolate, ap = 100.00%  (TP = 12, FP = 0) 
-class_id = 5, name = Meleira,          ap = 100.00%  (TP = 12, FP = 0) 
-class_id = 6, name = Mancha_Fisiologica, ap = 100 %  (TP = 12, FP = 0) 
-class_id = 7, name = Pinta_Preta,      ap = 100.00%  (TP = 12, FP = 0)
+* class_id = 0, name = FRUTO_SEM_DOENÇA, ap = 100.00%  (TP = 44, FP = 0) 
+* class_id = 1, name = Antracnose,       ap = 100.00%  (TP = 12, FP = 0) 
+* class_id = 2, name = Phytoftora,       ap = 100.00%  (TP = 12, FP = 0) 
+* class_id = 3, name = Dano_Mecânico,    ap = 100.00%  (TP = 12, FP = 0) 
+* class_id = 4, name = Mancha_Chocolate, ap = 100.00%  (TP = 12, FP = 0) 
+* class_id = 5, name = Meleira,          ap = 100.00%  (TP = 12, FP = 0) 
+* class_id = 6, name = Mancha_Fisiologica, ap = 100 %  (TP = 12, FP = 0) 
+* class_id = 7, name = Pinta_Preta,      ap = 100.00%  (TP = 12, FP = 0)
 
 ### B1024
 - [Gráfico mAP DataSet B1024](results/chart.png)
