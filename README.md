@@ -17,8 +17,12 @@ https://drive.google.com/drive/folders/13A2Dj1Fj8B4aKiAqn1xvUWiKRBBeE15P?usp=sha
 -  Description: Complete base composed of 17964 images with the following class distributions:
 <img src=https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/classes%20icann.png height=300 e width=450>
 
-## Inference
+### Inference
 - to make inferences : ./darknet detector test data/obj.data cfg/yolov4.cfg yolov4.weights
+
+
+### Sample images for inference testing
+https://drive.google.com/drive/folders/1GhCxUPzlfXBJRIXsuwiDwkZY8aNduu1_?usp=sharing
 
 ## Results
 ### F1-score 0.801
