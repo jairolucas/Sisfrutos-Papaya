@@ -8,18 +8,18 @@ To validate our dataset, we use it to train a DNN-based classifier in the task o
 - Cudnn 8.0
 - OpenCV 4.5
 
-## DataSet
--  Description: Complete base composed of 17964 images with the following class distributions:
-<img src=https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/classes%20icann.png height=300 e width=450>
-
-### Neural network model and examples for inference
+## Neural network model and examples for inference
 Download the folder below, it has all the files needed for testing with the model.
 To download the complete dataset, see the Dataset Papaya item.
 https://drive.google.com/drive/folders/13A2Dj1Fj8B4aKiAqn1xvUWiKRBBeE15P?usp=sharing
 
+## DataSet
+-  Description: Complete base composed of 17964 images with the following class distributions:
+<img src=https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/classes%20icann.png height=300 e width=450>
 
 ## Inference
 - to make inferences : ./darknet detector test data/obj.data cfg/yolov4.cfg yolov4.weights
 
 ## Results
-<img src=https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/graf%20icann.png height=300 e width=450>
+### F1-score 0.801
+<img src=https://https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/graf%20icann.png height=300 e width=450>
