@@ -18,7 +18,7 @@ https://drive.google.com/drive/folders/13A2Dj1Fj8B4aKiAqn1xvUWiKRBBeE15P?usp=sha
 <img src=https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/classes%20icann.png height=300 e width=450>
 
 ### Inference
-- to make inferences :  ./darknet detector test data/obj.data cfg/yolov4.cfg <nameimage>  yolov4.weights
+- to make inferences :  ./darknet detector test data/obj.data cfg/yolov4.cfg  nameimage  yolov4.weights
 
 
 ### Sample images for inference testing
