@@ -19,9 +19,7 @@ https://drive.google.com/drive/folders/13A2Dj1Fj8B4aKiAqn1xvUWiKRBBeE15P?usp=sha
 
 
 ## Inference
-- Hardware utilizado: Intel Xeon CPU E5606 (2,13 GHz), 24GB RAM, and a NVIDIA TITAN XP gpu (12 GB)
-- Tempo de Treinamento: ~79h
-- Para testar : ./darknet detector test data/obj.data cfg/yolov4.cfg yolov4.weights
+- to make inferences : ./darknet detector test data/obj.data cfg/yolov4.cfg yolov4.weights
 
 ## Results
 <img src=https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/graf%20icann.png height=300 e width=450>
