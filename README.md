@@ -14,7 +14,7 @@ To download the complete dataset, see the Dataset Papaya item.
 https://drive.google.com/drive/folders/13A2Dj1Fj8B4aKiAqn1xvUWiKRBBeE15P?usp=sharing
 
 ## DataSet
--  Description: Complete base composed of 17964 images with the following class distributions:
+-  Description: Complete base composed of 15179 images with the following class distributions:
 <img src=https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/classes%20icann.png height=300 e width=450>
 
 ### Inference
