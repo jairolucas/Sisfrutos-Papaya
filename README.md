@@ -1,7 +1,6 @@
 ## Detecção e Classificação de Doenças no Papaya Usando Deep Learning
-Nos últimos anos as abordagens baseadas em aprendizado de máquina, mais especificamente Redes Neurais Convolucionais (CNN) e Redes Neurais Profundas (DNN), ganharam destaque para solução de problemas de visão computacional nas mais diversas áreas. Porém, este tipo de abordagem requer uma grande quantidade de imagens do problema a ser tratado para um treinamento adequado da rede neural, o que muitas vezes dificulta este tipo de abordagem. Nas aplicações de visão artificial voltadas a fruticultura este problema é mais notório,sendo que uma das principais azões da pouca evolução nesta área é a carência de grandes conjuntos de dados devidamente anotados. O presente trabalho visa contribuir para alavancar a pesquisa neste domínio, tendo como principal contribuição a criação um novo conjunto de imagens, de dimensões inéditas na literatura, com amostras das principais doenças e defeitos mecânicos do Papaya (Carica Papaya).  Dado a sua dimensão, nosso conjunto de dados deve elevar o estado da arte em trabalhos de pesquisa na área de detecção e classificação de doenças e defeitos no Papaya e coloca-se como um benchmark de referência para aferição e comparação dos resultados destes trabalhos. Nosso conjunto de dados é composto por mais de 20.000 imagens de frutos com amostras das principais doenças e defeitos mecânicos relacionados do Papaya. As imagens possuem anotações da posição do fruto e da posição da doença/defeito encontrado no mesmo.
-
-Como segunda contribuição usamos nosso conjunto de dados para treinar uma rede neural profunda para identificar e classificar doenças e outros defeitos em uma imagem de Papaya. Nossa rede alcançou uma acuracidade de xx.xx % , o que a torna apta a ser utilizada em sistemas reais mais complexos, como sistemas embarcados de controle de qualidade ou sistemas robóticos de colheita.
+Abstract.  In recent years, approaches based on machine learning, more spe-cifically Deep Neural Networks (DNN), have gained prominence as a solu-tion to computer vision problems in the most diverse areas. However, this type of approach requires a large number of samples of the problem to be treated, which often makes this type of approach difficult. In computer vi-sion applications aimed at fruit growing, this problem is even more noticea-ble, as the performance of computer vision approaches in this segment is still well below the performance achieved in other areas. One of the main reasons listed by the literature for the little evolution in this area is the lack of large data sets duly and manually annotated, which are mandatory for applications that use cutting-edge computer vision techniques such as DNNs. The pre-sent work aims to leverage research in this domain, creating a new dataset of images, of an unparalleled size in the literature, with the main diseases and damages of papaya fruit (Carica Papaya). The proposed data set in this work consists of 15,179 RGB images duly and manually annotated with the posi-tion of the fruit and the disease/damage found within it.
+To validate our dataset, we use it to train a DNN-based classifier in the task of detecting diseases and defects in a papaya image. We recreated the old challenge “Man vs. Machine” comparing our classifier with a human ex-pert in a real environment. Our model reached an f1-score of 80.01%, while the overall performance obtained by the human expert was 67.3%.  
 
 ### Pré-Requisitos
 - Ubuntu 18
@@ -10,41 +9,14 @@ Como segunda contribuição usamos nosso conjunto de dados para treinar uma rede
 - OpenCV 4.5
 
 ## DataSet
-### DataSet B128 
-- Localização : Pasta dados do projeto
-- Descrição   : Base para testes de sanidade da rede. Composta por 128 imagens com a seguinte distribuições de classes:
-  * FRUTO_SEM_DOENÇA 	  44
-  * Antracnose		        12  
-  * Phytoftora		        12	
-  * Dano_Mecânico		     12
-  * Mancha_Chocolate	   12	
-  * Meleira			          12
-  * Mancha_Fisiologica  12
-  * Pinta_Preta		       12
+-  Description: Complete base composed of 17964 images with the following class distributions:
+<img src=https://github.com/jhony2507/Base_doencas_mamao/blob/main/tabela%20classes.png height=300 e width=450>
 
-### DataSet B1024
-- Localização : Pasta dados do projeto
-- Descrição   : Base para testes de sanidade da rede. Composta por 1024 imagens com a seguinte distribuições de classes:
-  * FRUTO_SEM_DOENÇA 	  324
-  * Antracnose		        100
-  * Phytoftora		        100	 
-  * Dano_Mecânico		     100
-  * Mancha_Chocolate	   100	
-  * Meleira			          100
-  * Mancha_Fisiologica  100
-  * Pinta_Preta		       100
-  
-### DataSet Bcompleta
-- Localização : [Base de dados Sisfrutos-Papaya](https://drive.google.com/drive/folders/10fuLRYK2NFqAo6TMYYjl8ulD7OdlVvZ5)
-- Descrição   : Base completa composta por 18750 imagens com a seguinte distribuições de classes:
-  * FRUTO_SEM_DOENÇA 	  
-  * Antracnose		        
-  * Phytoftora		        
-  * Dano_Mecânico		     
-  * Mancha_Chocolate	   
-  * Meleira			          
-  * Mancha_Fisiologica 
-  * Pinta_Preta		       
+### Neural network model and examples for inference
+Download the folder below, it has all the files needed for testing with the model.
+To download the complete dataset, see the Dataset Papaya item.
+https://drive.google.com/drive/folders/13A2Dj1Fj8B4aKiAqn1xvUWiKRBBeE15P?usp=sharing
+
 
 ## Treinar / Testar Rede
 - Hardware utilizado: Gpu Nvidia 1060 com 6gb de memória
