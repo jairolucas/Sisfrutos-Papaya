@@ -18,7 +18,7 @@ https://drive.google.com/drive/folders/13A2Dj1Fj8B4aKiAqn1xvUWiKRBBeE15P?usp=sha
 <img src=https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/classes%20icann.png height=300 e width=450>
 
 ### Inference
-- to make inferences : ./darknet detector test data/obj.data cfg/yolov4.cfg yolov4.weights
+- to make inferences :  ./darknet detector test data/obj.data cfg/yolov4.cfg <nameimage> yolov4.weights
 
 
 ### Sample images for inference testing
@@ -26,4 +26,4 @@ https://drive.google.com/drive/folders/1GhCxUPzlfXBJRIXsuwiDwkZY8aNduu1_?usp=sha
 
 ## Results
 ### F1-score 0.801
-<img src=https://https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/graf%20icann.png height=300 e width=450>
+<img src=https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/graf%20icann.png height=300 e width=450>
