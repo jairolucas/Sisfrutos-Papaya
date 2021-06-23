@@ -10,7 +10,7 @@ To validate our dataset, we use it to train a DNN-based classifier in the task o
 
 ## DataSet
 -  Description: Complete base composed of 17964 images with the following class distributions:
-<img src=https://github.com/jhony2507/Base_doencas_mamao/blob/main/tabela%20classes.png height=300 e width=450>
+<img src=https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/classes%20icann.png height=300 e width=450>
 
 ### Neural network model and examples for inference
 Download the folder below, it has all the files needed for testing with the model.
@@ -19,46 +19,9 @@ https://drive.google.com/drive/folders/13A2Dj1Fj8B4aKiAqn1xvUWiKRBBeE15P?usp=sha
 
 
 ## Treinar / Testar Rede
-- Hardware utilizado: Gpu Nvidia 1060 com 6gb de memória
-- Tempo de Treinamento: 
-  * DataSet B128  : 1:40 horas
-  * DataSet B1024 : ~59 horas
-  * DataSet Bcompleta : xxx
-- Para treinar: ./darknet detector train data/obj.data cfg/yolov4.cfg yolov4.conv.137 -map
+- Hardware utilizado: Intel Xeon CPU E5606 (2,13 GHz), 24GB RAM, and a NVIDIA TITAN XP gpu (12 GB)
+- Tempo de Treinamento: ~79h
 - Para testar : ./darknet detector test data/obj.data cfg/yolov4.cfg yolov4.weights
 
 ## Resultados
-- [Gráfico mAP Dataset B128](results/chartb128.png)
-* precision = 1.0, 
-* Recall    = 1.0, 
-* F1-score  = 1.0
-* mean average precision (mAP) = 1.000, or 100.00 %
-#### Por classe:
-* class_id = 0, name = FRUTO_SEM_DOENÇA, ap = 100.00%  (TP = 44, FP = 0) 
-* class_id = 1, name = Antracnose,       ap = 100.00%  (TP = 12, FP = 0) 
-* class_id = 2, name = Phytoftora,       ap = 100.00%  (TP = 12, FP = 0) 
-* class_id = 3, name = Dano_Mecânico,    ap = 100.00%  (TP = 12, FP = 0) 
-* class_id = 4, name = Mancha_Chocolate, ap = 100.00%  (TP = 12, FP = 0) 
-* class_id = 5, name = Meleira,          ap = 100.00%  (TP = 12, FP = 0) 
-* class_id = 6, name = Mancha_Fisiologica, ap = 100 %  (TP = 12, FP = 0) 
-* class_id = 7, name = Pinta_Preta,      ap = 100.00%  (TP = 12, FP = 0)
-
-### B1024
-- [Gráfico mAP DataSet B1024](results/chart.png)
-* precision = 0.83, 
-* Recall    = 0.91, 
-* F1-score  = 0.87
-* mean average precision (mAP) = 0.896401, or 89.64 %
-
-#### Por classe:
-* class_id = 0, name = FRUTO_SEM_DOENÇA,     ap = 93.78%        (TP = 334, FP = 72)
-* class_id = 1, name = Antracnose,             ap = 75.93%        (TP = 76, FP = 36)
-* class_id = 2, name = Phytoftora,             ap = 98.87%        (TP = 99, FP = 16)
-* class_id = 3, name = Dano_Mecânico,         ap = 80.99%        (TP = 72, FP = 15)
-* class_id = 4, name = Mancha_Chocolate,         ap = 87.15%        (TP = 71, FP = 3)
-* class_id = 5, name = Meleira,             ap = 91.73%        (TP = 74, FP = 3)
-* class_id = 6, name = Mancha_Fisiologica,         ap = 84.34%        (TP = 89, FP = 57)
-* class_id = 7, name = Pinta_Preta,             ap = 96.33%        (TP = 100, FP = 19
-
-
-- [Gráfico mAP Dataset Bcompleta](results/chartCompleta.png)
+<img src=https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/graf%20icann.png height=300 e width=450>
