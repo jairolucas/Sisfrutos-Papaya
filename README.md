@@ -27,3 +27,8 @@ https://drive.google.com/drive/folders/1GhCxUPzlfXBJRIXsuwiDwkZY8aNduu1_?usp=sha
 ## Results
 ### F1-score 0.801
 <img src=https://github.com/jairolucas/Sisfrutos-Papaya/blob/main/graf%20icann.png height=300 e width=450>
+
+## Comments
+The poor performance in detecting the Black Spot class surprised us, as it has very striking visual characteristics, which should favor the neural network. Upon further investigation, we detected that the poor performance is related to how, in some cases, the disease was noted in the ground truth. Black spot can occur in several disjoint regions of the fruit (several instances of the “Black Spot” class), but often the evaluator marks a large region of the fruit as being a single instance of that class. This makes the network detect multiple instances of this class outside the ground truth bound box. The images below exemplify this situation.
+
+We are reviewing the notes of this class, and this review, as well as the results will be available on the project page.
